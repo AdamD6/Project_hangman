@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutSettings"
+    tools:context=".Settings">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="10dp"
+        android:background="@drawable/background"
+        android:keepScreenOn="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="58dp"
+                android:text="Music"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonOn"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/buttons"
+                android:text="On"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/buttonOff"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/buttonOn"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_toEndOf="@+id/buttonOn"
+                android:layout_toRightOf="@+id/buttonOn"
+                android:background="@drawable/buttons"
+                android:text="Off"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/buttonOn"
+                android:layout_alignLeft="@+id/buttonOn"
+                android:layout_centerVertical="true"
+                android:text="Audio"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonOnGlobal"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttons"
+                android:text="UP"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/buttonOffGlobal"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignBaseline="@+id/buttonOnGlobal"
+                android:layout_alignBottom="@+id/buttonOnGlobal"
+                android:layout_alignStart="@+id/buttonOff"
+                android:layout_alignLeft="@+id/buttonOff"
+                android:background="@drawable/buttons"
+                android:text="DOWN"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hangman</string>
+
+    <string name="Play">Play</string>
+
+    <string name="Settings">Settings</string>
+
+    <string name="Score">Score</string>
+
+    <string name="Exit">Exit</string>
+</resources>

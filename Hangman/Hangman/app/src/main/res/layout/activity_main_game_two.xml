@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context=".HangmanActivityTwoPlayers"
+    android:background="@drawable/background_game"
+    android:id="@+id/relativeLayout2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:text="  Score 1: "
+            android:id="@+id/score"/>/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/scoreNum"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:text="Global score1 : "
+            android:id="@+id/globalscore"/>/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/globalNum"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="45dp"
+            android:textColor="@color/black"
+            android:text="Incorrect1: "
+            android:id="@+id/incorrect"/>/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/incorrectNum"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:text="  Score2 : "
+            android:id="@+id/score2"/>/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/scoreNum2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp"
+            android:text="Global score2 : "
+            android:id="@+id/globalscore2"/>/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/globalNum2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="45dp"
+            android:text="Incorrect2 : "
+            android:id="@+id/incorrect2"/>/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/incorrectNum2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/linearLayout2"
+        android:id="@+id/linearImage">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/hangman2_0"
+            android:id="@+id/hangmanFirstPlayer"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/hangman2_0"
+            android:id="@+id/hangmanSecondPlayer"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearSlovo"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@+id/linearImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"></LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayoutTwo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/linearSlovo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="30dp">
+
+    </GridLayout>
+
+
+</RelativeLayout>

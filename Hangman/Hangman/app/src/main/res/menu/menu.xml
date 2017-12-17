@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu tools:context=".MainMenu"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Play"
+        android:title="@string/Play" />
+    <item android:id="@+id/Settings"
+        android:title="@string/Settings"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/Score"
+        android:title="@string/Score" />
+    <item android:title="@string/Exit"
+        android:id="@+id/Exit" />
+
+</menu>
